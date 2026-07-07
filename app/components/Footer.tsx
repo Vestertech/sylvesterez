@@ -13,6 +13,10 @@ const Footer = () => {
         </a>
         .
       </p>
+      <p className="text-xs">
+        &copy; {new Date().getFullYear()} Sylvester Eziagor. All rights
+        reserved.
+      </p>
     </footer>
   );
 };
