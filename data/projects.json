@@ -1,0 +1,65 @@
+[
+  {
+    "year": 2025,
+    "name": "Cyber Threat Visualizer",
+    "techStack": ["TypeScript", "React"],
+    "link": "https://github.com/Vestertech/Cyber-Threat-Visualizer",
+    "where": ""
+  },
+  {
+    "year": 2025,
+    "name": "Secure Software Development",
+    "techStack": ["Secure SDLC", "Threat Modeling"],
+    "link": "https://github.com/Vestertech/Secure_Sofware_Dev",
+    "where": ""
+  },
+  {
+    "year": 2025,
+    "name": "tcpdump Traffic Log Analysis",
+    "techStack": ["tcpdump", "Linux", "Network Forensics"],
+    "link": "https://github.com/Vestertech/Practical-on-tcpdump-Traffic-Log",
+    "where": ""
+  },
+  {
+    "year": 2024,
+    "name": "User & Organisation Management API",
+    "techStack": ["TypeScript", "Node.js", "PostgreSQL"],
+    "link": "https://github.com/Vestertech/HNG_2-USER-ORG-mgt",
+    "where": "HNG Internship"
+  },
+  {
+    "year": 2024,
+    "name": "NestJS Microservice",
+    "techStack": ["NestJS", "TypeScript", "Microservices"],
+    "link": "https://github.com/Vestertech/NestJs-Microservice",
+    "where": ""
+  },
+  {
+    "year": 2024,
+    "name": "Weather API",
+    "techStack": ["JavaScript", "Node.js", "REST API"],
+    "link": "https://github.com/Vestertech/weatherAPI",
+    "where": ""
+  },
+  {
+    "year": 2024,
+    "name": "Clinton Drive",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "link": "https://github.com/Vestertech/clintonDrive",
+    "where": "Freelance Project"
+  },
+  {
+    "year": 2024,
+    "name": "Everything JavaScript",
+    "techStack": ["JavaScript", "HTML", "CSS", "DOM"],
+    "link": "https://github.com/Vestertech/Everything_Javascript",
+    "where": ""
+  },
+  {
+    "year": 2024,
+    "name": "Project Management GraphQL API",
+    "techStack": ["JavaScript", "GraphQL", "Node.js"],
+    "link": "https://github.com/Vestertech/Project_MGT-GraphQL",
+    "where": ""
+  }
+]
