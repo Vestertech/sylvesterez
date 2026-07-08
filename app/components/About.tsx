@@ -2,19 +2,16 @@ const About = () => {
   return (
     <div className="about-section flex flex-col gap-6 transition-all duration-300 hover:text-[var(--secondary-foreground)]">
       <p>
-        Hello, welcome to my portfolio{" "}
-        <span className="animate-wave text-2xl">👋🏽</span> I’m Sylvester, an
-        Information Technology (IT) professional who’s all about safeguarding
-        your digital assets and building secure systems. I specialize in
-        Information Security Analysis, with focus on access control, network
-        security, compliance, troubleshooting, and improving audit readiness. I
-        thrive on driving process efficiency and aligning risk practices with
-        overarching business objectives.
+        Hello <span className="animate-wave text-2xl">👋🏽</span> I’m Sylvester —
+        an Information Security Analyst who likes understanding how things break
+        before deciding how to protect them. My work centers on access control,
+        network security, and compliance: keeping systems audit-ready and making
+        sure security practices actually serve the business instead of slowing
+        it down.
       </p>
 
       <p>
-        I’m a Security Professional and software developer (so, yes, you can
-        trust me with your assets). I currently work at{" "}
+        These days I’m at{" "}
         <a
           href="https://www.walmartcanada.ca/"
           target="_blank"
@@ -23,27 +20,29 @@ const About = () => {
         >
           Walmart Canada
         </a>{" "}
-        as an Asset Protection Associate, where my days are spent preventing,
-        investigating, and monitoring security incidents, and ensuring the
-        safety of our customers and employees. After work, I spend time
-        researching emerging threats, matching tools, techniques, and
-        procedures to those threats, and developing solutions.
+        as an Asset Protection Associate, investigating and documenting security
+        incidents from intake to closure. Working physical security taught me
+        something the certifications didn’t: most incidents come down to people
+        and process, not just technology. After hours, I run security labs —
+        simulating attacks, engineering detections, and writing up what I learn.
       </p>
 
       <p>
-        Previously, I worked as a backend developer at Pathfinder Idee Tech
-        Solutions, where I built capstone projects for clients and delivered
-        them on time. Outside of my day-to-day work, I build personal projects
-        which are documented and available on my GitHub and in the blogs
-        section. These experiences have shaped how I think about security and
-        how I approach challenges.
+        Before that, I split my time between two worlds: support engineering at
+        Crestflow Energy — monitoring systems in Splunk, managing user access
+        through SailPoint, and keeping infrastructure running — and backend
+        development at
+        Pathfinder Idee Tech Solutions, building APIs and shipping client
+        projects in Node.js. Doing both at once shaped how I work — I read code,
+        write clear documentation, and can tell a real vulnerability from a
+        theoretical one. My projects and write-ups live on my GitHub and in the
+        blog section below.
       </p>
 
       <p>
         When I’m not working, you can find me playing table tennis, FIFA, or
-        football, and spending time with my family. Welcome to my portfolio —
-        feel free to hit me up if you want to talk about work, tech, or life
-        experience.
+        football, and spending time with my family. Feel free to reach out if
+        you want to talk about work, tech, or life.
       </p>
     </div>
   );

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Archive | Sylvester Eziagor",
   description:
-    "Sylvester Eziagor projects archive. A collection of projects that I have worked on in the past.",
+    "Archive of projects by Sylvester Eziagor — security labs, APIs, and web builds.",
 };
 
 export default function ArchiveLayout({

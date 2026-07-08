@@ -15,29 +15,28 @@ const ExperienceSection = () => {
           "Compliance",
           "Safety & Security",
         ]}
-        url="https://www.walmartcanada.ca/en"
+        url="https://www.walmartcanada.ca/"
       />
       <Experience
         start="2022"
         end="2024"
-        description="Conducted threat analysis in a 24/7 environment, neutralizing 350+ malware instances with Splunk and protecting 30,000+ systems. Integrated SailPoint IAM to streamline identity and access controls for 15,000+ users across cloud and on-prem environments, and enforced cybersecurity policies aligned to ISO 27001 for 12,000 end-users."
+        description="Supported and monitored enterprise systems 24/7 at an energy company: detected and remediated 350+ malware incidents in Splunk across a 30,000-endpoint environment, administered SailPoint identity and access management for 15,000+ users, and enforced ISO 27001-aligned security policies. Also migrated company web applications to in-house infrastructure (cPanel, DNS, Nginx), cutting hosting costs by 20%."
         title="Crestflow Energy"
         techs={[
           "Splunk",
           "SailPoint",
-          "SIEM",
-          "IAM",
-          "Threat Analysis",
+          "PowerShell",
           "ISO 27001",
+          "Nginx",
         ]}
         url="https://crestflowenergy.com/"
       />
       <Experience
-        start="2023"
+        start="2021"
         end="2024"
         description="Designed and built backend services and RESTful APIs using Node.js and Express, handling data models, authentication, and business logic for production applications. Collaborated with frontend developers to define API contracts and ensure reliable, well-documented endpoints."
         title="PathFinder Idee Tech Solutions"
-        techs={["Node.js", "Express", "TypeScript", "PostgreSQL", "Git"]}
+        techs={["Node.js", "Express", "TypeScript", "PostgreSQL"]}
         url="https://pathfinderinfotech.com/"
       />
       <a

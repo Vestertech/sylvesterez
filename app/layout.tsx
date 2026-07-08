@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sylvester Eziagor",
   description:
-    "Sylvester Eziagor is an Information Security Analyst and this is his portfolio",
+    "Information Security Analyst — security labs, detection engineering, and backend development.",
   icons: {
     icon: "/favicon.ico",
   },

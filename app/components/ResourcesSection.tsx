@@ -5,7 +5,7 @@ const ResourcesSection = () => {
     <div className="flex flex-col gap-4">
       <Resources
         url="https://medium.com/@sylvesterEziagor/cybersecurity-attack-simulation-detection-engineering-1c37ffdff371"
-        title="Attack Simulation & Detection Engineering."
+        title="Attack Simulation & Detection Engineering"
         img="/resources/2.jpg"
         year="2026"
       />

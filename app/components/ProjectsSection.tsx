@@ -6,13 +6,12 @@ const ProjectsSection = () => {
   return (
     <div className="flex flex-col gap-4">
       <Project
-        description="FHIR R4 server implementation demonstrating healthcare interoperability workflows using HAPI FHIR JPA Server. The project showcases the integration of FHIR resources, RESTful APIs, and data exchange standards to enable seamless communication between healthcare systems."
-        title="FHIR_Polyclinic_Int_hub"
+        description="FHIR R4 server implementation demonstrating healthcare interoperability workflows using HAPI FHIR JPA Server, with RESTful APIs and standards-based data exchange between healthcare systems."
+        title="FHIR Polyclinic Interoperability Hub"
         techs={[
           "Docker",
           "Postman",
-          "Git",
-          "swagger",
+          "Swagger",
           "HAPI FHIR JPA Server",
           "EMR Workflows",
           "Java",
@@ -21,7 +20,7 @@ const ProjectsSection = () => {
         img="/projects/1.jpg"
       />
       <Project
-        description="Full-cycle attack simulation lab where I built and delivered a reverse-shell payload, then engineered Sysmon with Splunk detections mapped to MITRE ATT&CK to catch execution, C2 traffic, and Defender tampering."
+        description="End-to-end purple-team lab: built and delivered a reverse-shell payload from Kali Linux, then switched sides to engineer the detections that catch it. Instrumented the target with Sysmon, shipped logs to Splunk, and wrote detection rules mapped to MITRE ATT&CK covering payload execution, C2 traffic, and Defender tampering — with the full attack-to-detection chain documented in the write-up."
         title="Attack Simulation & Detection Engineering"
         techs={[
           "Kali Linux",
@@ -48,7 +47,7 @@ const ProjectsSection = () => {
         img="/projects/4.jpg"
       />
       <Project
-        description="Built a virtualized Windows domain environment in VirtualBox—a Windows Server 2019 domain controller and a Windows 10 client—to model a corporate network. Configured AD DS (mydomain.com forest), DNS, a DHCP scope, and NAT/routing via RRAS, then automated bulk provisioning with a PowerShell script that generated an OU and 1,000 AD user accounts. Joined the Windows 10 client to the domain and verified authentication, DHCP leases, and connectivity end to end."
+        description="Modeled a corporate network in VirtualBox to practice enterprise identity administration: a Windows Server 2019 domain controller running AD DS, DNS, DHCP, and NAT routing via RRAS, plus a domain-joined Windows 10 client. Wrote a PowerShell script to bulk-provision an OU with 1,000 user accounts, then verified authentication, DHCP leases, and connectivity end to end."
         title="Windows Server AD Lab"
         techs={[
           "Windows Server 2019",
@@ -62,7 +61,7 @@ const ProjectsSection = () => {
       />
 
       <Project
-        description="A tour-booking platform built on a RESTful API with an MVC architecture. Implemented stateless JWT authentication via httpOnly cookies, bcrypt-hashed passwords, role-based access control, and a crypto-based password-reset flow with hashed, time-limited tokens. Modeled data in Mongoose with geospatial 2dsphere indexing, virtual-populated reviews, and aggregation pipelines, served through a reusable generic CRUD handler factory. Rendered interactive tour maps with Mapbox GL (custom-styled markers, popups, and auto-fitted bounds), processed payments through Paystack, handled image uploads with Multer and Sharp, and delivered transactional email via SendGrid."
+        description="A full tour-booking platform built on Node.js, Express, and MongoDB, where security carries the design: stateless JWT auth in httpOnly cookies, bcrypt-hashed passwords, role-based access control, and a hashed, time-limited password-reset flow. Interactive Mapbox tour maps, Paystack payments, and transactional email round out the product."
         title="Natours — Tour Booking Platform"
         techs={[
           "Node.js",
@@ -76,6 +75,13 @@ const ProjectsSection = () => {
         ]}
         url="https://natours-app-production-a746.up.railway.app/"
         img="/projects/5.jpg"
+      />
+      <Project
+        description="A workout tracker built in vanilla JavaScript. Click anywhere on the map to log a running or cycling session; it drops a Leaflet marker and adds a card to the sidebar. Uses OOP with a Workout base class and Running/Cycling subclasses, the browser Geolocation API to center the map on your location, input validation, and localStorage that rebuilds workouts as real class instances on reload."
+        title="Mapty — Workout Tracker"
+        techs={["JavaScript", "OOP", "Leaflet", "Geolocation API"]}
+        url="https://mapty-r84afpx18-eziagors-projects.vercel.app/"
+        img="/projects/6.jpg"
       />
 
       <div className="my-8">
