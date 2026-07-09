@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div className="about-section flex flex-col gap-6 transition-all duration-300 hover:text-[var(--secondary-foreground)]">
       <p>
-        Hello <span className="animate-wave text-2xl">👋🏽</span> I'm Sylvester,
+        Hello <span className="animate-wave text-2xl">👋🏽</span> I&apos;m Sylvester,
         an Information Security Analyst who likes understanding how things break
         before deciding how to protect them. My focus is access control, network
         security, and compliance: keeping systems audit-ready and making sure
@@ -18,7 +18,7 @@ const About = () => {
         Power User certifications.
       </p>
       <p>
-        Right now I'm at{" "}
+        Right now I&apos;m at{" "}
         <a
           href="https://www.walmartcanada.ca/"
           target="_blank"
@@ -29,21 +29,21 @@ const About = () => {
         </a>{" "}
         as an Asset Protection Associate, investigating and documenting security
         incidents from intake to closure. Working physical security taught me
-        something the labs don't: most incidents come down to people and
+        something the labs don&apos;t: most incidents come down to people and
         process, not just technology.
       </p>
       <p>
         Before that, I split my time between two worlds: support engineering at
         Crestflow Energy, where I managed Windows-based user access through
         SailPoint, kept infrastructure running, and migrated and hardened the
-        company's web applications, and backend development at PathFinder Idee
+        company&apos;s web applications, and backend development at PathFinder Idee
         Tech Solutions, building APIs and shipping client projects in Node.js.
         Doing both shaped how I work: I read code, write clear documentation,
         and can tell a real vulnerability from a theoretical one. My projects
         and write-ups live on my GitHub and in the blog section below.
       </p>
       <p>
-        When I'm not working, you can find me playing table tennis or video games. Feel free to reach out if
+        When I&apos;m not working, you can find me playing table tennis or video games. Feel free to reach out if
         you want to talk about work, tech, or life.
       </p>
     </div>
