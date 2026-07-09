@@ -20,14 +20,14 @@ const ExperienceSection = () => {
       <Experience
         start="2022"
         end="2024"
-        description="Supported and monitored enterprise systems 24/7 at an energy company: detected and remediated 350+ malware incidents in Splunk across a 30,000-endpoint environment, administered SailPoint identity and access management for 15,000+ users, and enforced ISO 27001-aligned security policies. Also migrated company web applications to in-house infrastructure (cPanel, DNS, Nginx), cutting hosting costs by 20%."
+        description="Managed Windows-based user access and provisioning through SailPoint, applying role-based permissions and continuous log monitoring to safeguard systems processing payment and metering transactions. Migrated company web applications to in-house infrastructure (cPanel, DNS, Nginx), including SSL hardening, caching, and database query optimization, cutting hosting costs by 20%. Wrote SOPs covering meter vending, tariff configuration, and payment gateway integration."
         title="Crestflow Energy"
         techs={[
-          "Splunk",
           "SailPoint",
+          "Windows Server",
           "PowerShell",
-          "ISO 27001",
           "Nginx",
+          "SSL/TLS",
         ]}
         url="https://crestflowenergy.com/"
       />
