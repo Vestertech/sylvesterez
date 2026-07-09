@@ -5,7 +5,7 @@ const ResourcesSection = () => {
     <div className="flex flex-col gap-4">
       <Resources
         url="https://medium.com/@sylvesterEziagor/cybersecurity-attack-simulation-detection-engineering-1c37ffdff371"
-        title="Attack Simulation & Detection Engineering"
+        title="Engineering Splunk Detections Mapped to MITRE ATT&CK: A Homelab Walkthrough"
         img="/resources/2.jpg"
         year="2026"
       />
@@ -17,7 +17,7 @@ const ResourcesSection = () => {
       />
       <Resources
         url="https://medium.com/@sylvesterEziagor/broken-authentication-9513779baa01"
-        title="Broken Authentication"
+        title="Breaking and Fixing Authentication: Lessons from a Deliberately Vulnerable App"
         img="/resources/1.jpg"
         year="2025"
       />
