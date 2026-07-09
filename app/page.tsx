@@ -6,7 +6,7 @@ import ResourcesSection from "./components/ResourcesSection";
 import Footer from "./components/Footer";
 
 const SectionHeading = ({ label }: { label: string }) => (
-  <div className="sticky top-0 z-20 -mx-4 mb-4 bg-[rgba(10,15,28,0.8)] px-4 py-4 backdrop-blur md:-mx-12 md:px-12 lg:sr-only">
+  <div className="sticky top-0 z-20 -mx-4 mb-4 bg-[rgba(255,255,255,0.8)] px-4 py-4 backdrop-blur md:-mx-12 md:px-12 lg:sr-only">
     <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--secondary-foreground)]">
       {label}
     </h2>

@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 :root {
-  /* Dark navy theme */
-  --background: #0a0f1c;
-  --primary-foreground: #8b98b3;
-  --secondary-foreground: #e6edf7;
-  /* Teal accent on deep navy */
-  --accent: #5eead4;
-  --accent-hover: rgba(94, 234, 212, 0.07);
-  --border: rgba(139, 152, 179, 0.18);
+  /* Crisp white theme */
+  --background: #ffffff;
+  --primary-foreground: #3d4a63;
+  --secondary-foreground: #0a0f1c;
+  /* Teal accent darkened for contrast on light background */
+  --accent: #0d9488;
+  --accent-hover: rgba(13, 148, 136, 0.08);
+  --border: rgba(61, 74, 99, 0.18);
   /* Cursor glow can be toggled by changing this value */
-  --cursor-glow-alpha: 0.13;
-  --cursor-glow-rgb: 29, 78, 216; /* deep blue glow against the navy */
+  --cursor-glow-alpha: 0.08;
+  --cursor-glow-rgb: 13, 148, 136; /* soft teal glow against the off-white */
 }
 
 *,
@@ -41,7 +41,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #0a0f1c;
+  color: #ffffff;
 }
 
 .cursor {
