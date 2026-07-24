@@ -2,12 +2,30 @@ import Cursor from "./components/Cursor";
 import "./global.css";
 import type { Metadata } from "next";
 
+const siteUrl = "https://sylvesterez.dev";
+const description =
+  "Information Security Analyst — Detection engineering, Risk management, Incident response and Software development.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Sylvester Eziagor",
-  description:
-    "Information Security Analyst — security labs, detection engineering, and backend development.",
+  description,
   icons: {
     icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Sylvester Eziagor",
+    description,
+    url: siteUrl,
+    siteName: "Sylvester Eziagor",
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sylvester Eziagor",
+    description,
+    creator: "@YOUwooded",
   },
 };
 

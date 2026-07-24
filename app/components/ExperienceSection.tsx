@@ -13,6 +13,7 @@ const ExperienceSection = () => {
           "Audit",
           "Incident & Event Response",
           "Compliance",
+          "Risk Assessment",
           "Safety & Security",
         ]}
         url="https://www.walmartcanada.ca/"
@@ -26,8 +27,10 @@ const ExperienceSection = () => {
           "SailPoint",
           "Windows Server",
           "PowerShell",
+          "Vendor Management",
           "Nginx",
           "SSL/TLS",
+          "SIEM",
         ]}
         url="https://crestflowenergy.com/"
       />
@@ -38,6 +41,21 @@ const ExperienceSection = () => {
         title="PathFinder Idee Tech Solutions"
         techs={["Node.js", "Express", "TypeScript", "PostgreSQL"]}
         url="https://pathfinderinfotech.com/"
+      />
+      <Experience
+        start="2019"
+        end="2021"
+        description="Maintained and enhanced 20+ enterprise banking application modules and designed 15+ RESTful APIs for secure integration between internal systems and third-party services. Optimized existing code and troubleshot production issues to cut average response times by 25%, supported CI/CD and release activities, and authored technical documentation covering architecture, APIs, and deployment procedures."
+        title="Zenith Bank Plc"
+        techs={[
+          "Java",
+          "Spring Boot",
+          "Oracle DB",
+          "Kafka",
+          "Jenkins",
+          "Maven",
+        ]}
+        url="https://www.zenithbank.com/"
       />
       <a
         href="/resume.pdf"
