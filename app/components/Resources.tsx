@@ -1,3 +1,4 @@
+import Image from "next/image";
 import UpRightArrow from "@/svg/UpRightArrow";
 
 const Resources = ({
@@ -19,10 +20,12 @@ const Resources = ({
       className="group grid grid-cols-12 items-center gap-4 rounded-md transition-[background-color] duration-500 focus:outline-none md:p-6 md:hover:bg-[--accent-hover] md:focus:bg-[--accent-hover]"
     >
       <div className="col-span-4 md:col-span-3">
-        <div className="max-w-[200px] rounded-sm md:max-w-[150px]">
-          <img
+        <div className="relative aspect-[4/3] max-w-[200px] rounded-sm md:max-w-[150px]">
+          <Image
             src={img}
-            className="w-full rounded-sm object-cover"
+            fill
+            sizes="(min-width: 768px) 150px, 33vw"
+            className="rounded-sm object-cover"
             alt={`screenshot of ${title}`}
           />
         </div>

@@ -5,8 +5,9 @@ const ExperienceSection = () => {
   return (
     <div className="flex flex-col gap-4">
       <Experience
-        start="2025"
+        start="June 2025"
         end="present"
+        role="Asset Protection Associate"
         description="Investigate and document workplace and customer incidents from intake to closure, maintaining audit-ready case files and ensuring compliance with regulatory and internal policies. Conduct preliminary reviews, evidence collection, and reporting across safety, ethics, and policy matters, collaborating closely with Asset Protection, HR, and Operations."
         title="Walmart Canada"
         techs={[
@@ -19,8 +20,9 @@ const ExperienceSection = () => {
         url="https://www.walmartcanada.ca/"
       />
       <Experience
-        start="2022"
-        end="2024"
+        start="July 2022"
+        end="December 2024"
+        role="Support Engineer"
         description="Managed Windows-based user access and provisioning through SailPoint, applying role-based permissions and continuous log monitoring to safeguard systems processing payment and metering transactions. Migrated company web applications to in-house infrastructure (cPanel, DNS, Nginx), including SSL hardening, caching, and database query optimization, cutting hosting costs by 20%. Wrote SOPs covering meter vending, tariff configuration, and payment gateway integration."
         title="Crestflow Energy"
         techs={[
@@ -37,6 +39,8 @@ const ExperienceSection = () => {
       <Experience
         start="2021"
         end="2024"
+        role="Backend Developer"
+        location="remote"
         description="Designed and built backend services and RESTful APIs using Node.js and Express, handling data models, authentication, and business logic for production applications. Collaborated with frontend developers to define API contracts and ensure reliable, well-documented endpoints."
         title="PathFinder Idee Tech Solutions"
         techs={["Node.js", "Express", "TypeScript", "PostgreSQL"]}
@@ -45,15 +49,17 @@ const ExperienceSection = () => {
       <Experience
         start="2019"
         end="2021"
-        description="Maintained and enhanced 20+ enterprise banking application modules and designed 15+ RESTful APIs for secure integration between internal systems and third-party services. Optimized existing code and troubleshot production issues to cut average response times by 25%, supported CI/CD and release activities, and authored technical documentation covering architecture, APIs, and deployment procedures."
+        role="Software Engineer"
+        description="Maintained and enhanced 20+ enterprise banking application modules in Java and Spring Boot, and designed 15+ RESTful APIs for secure integration between internal systems and third-party services. Implemented OAuth2, JWT, and SSO with role-based access control, managed cryptographic keys through the bank's HSM, and applied encryption to sensitive data at rest in Oracle. Optimized existing code and troubleshot production issues to cut average response times by 25%, supported CI/CD and release activities, and authored technical documentation covering architecture, API contracts, and deployment procedures."
         title="Zenith Bank Plc"
         techs={[
           "Java",
           "Spring Boot",
           "Oracle DB",
-          "Kafka",
+          "OAuth2 / JWT",
           "Jenkins",
           "Maven",
+          "REST APIs",
         ]}
         url="https://www.zenithbank.com/"
       />

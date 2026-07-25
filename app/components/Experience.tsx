@@ -5,6 +5,8 @@ const Experience = ({
   description,
   end,
   start,
+  role,
+  location,
   title,
   url,
   techs,
@@ -15,6 +17,8 @@ const Experience = ({
   title: string;
   url: string;
   techs: string[];
+  role: string;
+  location?: string;
 }) => {
   return (
     <a
@@ -27,11 +31,16 @@ const Experience = ({
         <p className="text-xs uppercase text-[--primary-foreground] group-hover:text-[--secondary-foreground] group-focus:text-[--secondary-foreground]">
           {start} - {end}
         </p>
+        {location && (
+          <p className="mt-1 text-xs uppercase text-[--primary-foreground] group-hover:text-[--secondary-foreground] group-focus:text-[--secondary-foreground]">
+            {location}
+          </p>
+        )}
       </div>
       <div className="col-span-8 flex flex-col gap-3">
         <div className="flex items-center gap-1">
           <h3 className="text-base capitalize group-hover:text-[--accent] group-focus:text-[--accent]">
-            {title}
+            {role} &middot; {title}
           </h3>
           <span className="inline-block transition-all duration-500 group-hover:translate-x-[0.3rem] group-hover:translate-y-[-0.2rem] group-focus:translate-x-[0.3rem] group-focus:translate-y-[-0.2rem]">
             <UpRightArrow />

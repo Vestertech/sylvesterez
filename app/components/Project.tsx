@@ -1,3 +1,4 @@
+import Image from "next/image";
 import UpRightArrow from "@/svg/UpRightArrow";
 import Tech from "./Tech";
 
@@ -23,9 +24,11 @@ const Project = ({
     >
       <div className="col-span-3">
         <div className="relative h-[80px] max-w-[200px] rounded-sm md:max-w-[150px]">
-          <img
+          <Image
             src={img}
-            className="absolute h-full w-full rounded-sm object-cover"
+            fill
+            sizes="(min-width: 768px) 150px, 200px"
+            className="rounded-sm object-cover"
             alt={`screenshot of ${title}`}
           />
         </div>
