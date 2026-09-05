@@ -7,7 +7,7 @@ const ExperienceSection = () => {
       <Experience
         start="June 2025"
         end="present"
-        role="Asset Protection Associate"
+        role="Compliance Lead"
         description="Investigate and document workplace and customer incidents from intake to closure, maintaining audit-ready case files and ensuring compliance with regulatory and internal policies. Conduct preliminary reviews, evidence collection, and reporting across safety, ethics, and policy matters, collaborating closely with Asset Protection, HR, and Operations."
         title="Walmart Canada"
         techs={[
