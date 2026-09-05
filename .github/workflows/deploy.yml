@@ -19,11 +19,48 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
+          command_timeout: 15m
+          # Abort the whole script on the first failing command, so a broken
+          # step can never fall through to the pm2 restart below.
+          script_stop: true
           script: |
             export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            set -eo pipefail
+
             cd ~/sylvesterez
+
+            echo "::group::Disk before deploy"
+            df -h /
+            echo "::endgroup::"
+
+            # A full disk previously took the site down: git pull, npm install
+            # and npm run build all failed with ENOSPC, then pm2 restarted the
+            # app against a half-written .next. Reclaim space first, and bail
+            # out *before* touching the running process if it is still tight.
+            AVAIL_MB=$(df -Pm / | awk 'NR==2 {print $4}')
+            if [ "$AVAIL_MB" -lt 2048 ]; then
+              echo "Only ${AVAIL_MB}MB free - reclaiming space."
+              npm cache clean --force || true
+              pm2 flush || true
+              rm -rf .next
+              AVAIL_MB=$(df -Pm / | awk 'NR==2 {print $4}')
+            fi
+
+            if [ "$AVAIL_MB" -lt 1024 ]; then
+              echo "ERROR: only ${AVAIL_MB}MB free after cleanup - aborting."
+              echo "The current deployment is left running untouched."
+              exit 1
+            fi
+
             git pull origin main
-            npm install
+            npm ci
             npm run build
-            pm2 restart portfolio || pm2 start npm --name portfolio -- start
+
+            pm2 restart portfolio --update-env || pm2 start npm --name portfolio -- start
+            # Persist the process list so pm2 resurrects the app after a reboot.
+            pm2 save
+
+            echo "::group::Disk after deploy"
+            df -h /
+            echo "::endgroup::"
